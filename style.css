@@ -11,7 +11,7 @@ nav {
 }
 
 nav#nav-main {
-    background-color: #005fa7;
+    background-color: #286385;
     padding: 10px 0;
     z-index: 4;
 }
@@ -126,10 +126,33 @@ p {
 
 }
 
-/* buttons */
+/* buttons and their text. Slanted button trick from http://blog.karenmenezes.com/2014/jun/18/slanted-buttons-3-lines-css/ */
 .imgdiv button {
-    vertical-align: middle;
-    margin: 200px;
+    margin: 20px 10%;
+    position:relative;
+    left: 5%;
+    top: 35%;
+    padding: 40px;
+    width: 25%;
+    height: 20%;
+    border: 1px solid #41ade5;
+    background-color: rgba(65, 173, 229, 0.6);
+    transform: skewY(3deg);
+
+}
+
+.buttontext {
+    transform: skewY(-3deg);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+}
+.imgdiv button *:hover{
+    background-color: rgba(65, 173, 229, 1);
+    transition:0.3s;
+
 }
 
 /* last banner with footer */

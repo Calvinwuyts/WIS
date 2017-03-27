@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Food for Thought</title>
-
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <script type="text/javascript" src="jquery-3.1.1.js"></script>
     <script src="script.js"></script>
@@ -11,7 +10,7 @@
 <body>
 <nav id="nav-main">
     <ul>
-        <li><a href="">Home</a></li>
+        <li><a href="" onclick="dietclick()">Home</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Gallery</a></li>
         <li><a href="">Tutorials</a></li>
@@ -23,17 +22,17 @@
     <p>Get great food recommendations for every diet and food intolerance or allergy.</p>
 </div>
 <div class="imgdiv" id="firstbanner">
-    <button>Diet options</button>
-    <button>Intolerance / Allergy options</button>
+    <button type="button" onclick="dietclick();"><span class="buttontext">Diet options</span></button>
+    <button type="button"><span class="buttontext">Intolerance / Allergy options</span></button>
 </div>
 <div class="textdiv">
     <p>Check out these curated results if you're low on inspiration</p>
 </div>
 <div class="imgdiv" id="secondbanner">
-    <button>Vegan breakfast</button>
-    <button>Gluten free snacks</button>
-    <button>Vegetarian spring picnic</button>
-    <button>Lactose-free desserts</button>
+    <button><span class="buttontext">Vegan breakfast</span></button>
+    <button><span class="buttontext">Gluten free snacks</span></button>
+    <button><span class="buttontext">Vegetarian spring picnic</span></button>
+    <button><span class="buttontext">Lactose-free desserts</span></button>
 </div>
 <div class="footerdiv">
 <footer>Website made by Jolan Wuyts and Margo Roothoofds using the Spoonacular API.</footer>
