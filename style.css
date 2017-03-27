@@ -1,0 +1,162 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+
+/* nav code from http://callmenick.com/post/simple-responsive-navigation-menu */
+nav {
+    margin-bottom: 0;
+    max-height: 50px;
+}
+
+nav#nav-main {
+    background-color: #005fa7;
+    padding: 10px 0;
+    z-index: 4;
+}
+nav#nav-main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+nav#nav-main li {
+    display: inline-block;
+    border-right: solid 1px #004191;
+    padding: 0 5px; }
+nav#nav-main li:last-child {
+    border-right: none; }
+nav#nav-main a {
+    display: block;
+    color: white;
+    padding: 10px 30px; }
+nav#nav-main a:hover {
+    background-color: #39709e;
+    color: #fff; }
+
+
+/* overhanging logo by Geno Quiroz, https://quiroz.co/the-overlapping-divi-logo/ */
+
+nav img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    z-index: 5;
+    overflow: visible;
+    height: 50px;
+}
+
+/* slanted blocks between banner divs. code for slants here: https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms */
+.textdiv {
+    background: #41ade5;
+    position: relative;
+    z-index: -1;
+    display: block;
+    height: 10%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}
+
+.textdiv:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(3deg);
+    transform-origin: top left;
+    z-index: -1;
+}
+.textdiv:before {
+    background: inherit;
+    top: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(3deg);
+    transform-origin: top right;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 0.5em;
+}
+
+/* slanted image divs with buttons */
+.imgdiv {
+    width: 100%;
+    height:500px;
+    z-index: -3;
+    position: relative;
+}
+.imgdiv img{
+    max-width:100%;
+    display:block;
+    vertical-align: bottom;
+}
+#firstbanner {
+    background-image: url("banner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#secondbanner {
+    background-image: url("banner2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* buttons */
+.imgdiv button {
+    vertical-align: middle;
+    margin: 200px;
+}
+
+/* last banner with footer */
+.footerdiv {
+    background: #41ade5;
+    position: relative;
+    z-index: -1;
+    display: block;
+    height: 10%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}
+.footerdiv:before {
+    background: inherit;
+    top: 0;
+    content: '';
+    display: block;
+    height: 70%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(3deg);
+    transform-origin: top right;
+    z-index: -1;
+}
