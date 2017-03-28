@@ -68,11 +68,11 @@ nav img{
     bottom: 0;
     content: '';
     display: block;
-    height: 50%;
+    height: 100%;
     left: 0;
     position: absolute;
     right: 0;
-    transform: skewY(3deg);
+    transform: skewY(4deg);
     transform-origin: top left;
     z-index: -1;
 }
@@ -81,11 +81,11 @@ nav img{
     top: 0;
     content: '';
     display: block;
-    height: 50%;
+    height: 70%;
     left: 0;
     position: absolute;
     right: 0;
-    transform: skewY(3deg);
+    transform: skewY(4deg);
     transform-origin: top right;
     z-index: -1;
 }
