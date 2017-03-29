@@ -59,7 +59,7 @@ nav img{
     color: #fff;
     font-family: 'Fira Sans', sans-serif;
     margin: 0;
-    padding: 50px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -72,7 +72,7 @@ nav img{
     left: 0;
     position: absolute;
     right: 0;
-    transform: skewY(4deg);
+    transform: skewY(3deg);
     transform-origin: top left;
     z-index: -1;
 }
@@ -81,11 +81,11 @@ nav img{
     top: 0;
     content: '';
     display: block;
-    height: 70%;
+    height: 100%;
     left: 0;
     position: absolute;
     right: 0;
-    transform: skewY(4deg);
+    transform: skewY(3deg);
     transform-origin: top right;
     z-index: -1;
 }
