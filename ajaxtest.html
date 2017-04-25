@@ -7,80 +7,12 @@
     <title>API test</title>
 </head>
 <body>
-
-
-<form onsubmit="searchfn($('#query').val());return false;">
-    <input type="text" name="query" id="query">
-    Search for recipes!
-    <input type="submit" value='submit' id="submit">
-    <br>
-    <ul><input type="radio" name="diet" id="veg"><label for="veg">vegetarian</label></ul>
-    <ul><input type="radio" name="diet" id="lactoveg"><label for="lactoveg">lacto vegetarian</label></ul>
-    <ul><input type="radio" name="diet" id="pesca"><label for="pesca">pescatarian</label></ul>
-    <ul><input type="radio" name="diet" id="vegan"><label for="vegan">vegan</label></ul>
-</form>
-
-
-
-</form>
-<form onsubmit="vegetarianfn($('#veggie').val());return false;">
-        <input type="text" name="query" id="veggie">
+<form onsubmit="vegfunction($('#veg').val());return false;">
+        <input type="text" name="query" id="veg">
         Search for vegetarian recipes
         <br>
-        <input type="submit" value='submit' id="vegsubmit">
+        <input type="submit" value='submit' id="submit">
 </form>
-<!--
-<form onsubmit="lactovegetarianfn($('#lactoveg').val());return false;">
-    <input type="text" name="query" id="lactoveg">
-    Search for lacto-vegetarian recipes
-    <br>
-    <input type="submit" value='submit' id="lactovegsubmit">
-</form>
-
-<form onsubmit="pescatarianfn($('#pesca').val());return false;">
-    <input type="text" name="query" id="pesca">
-    Search for pescatarian recipes
-    <br>
-    <input type="submit" value='submit' id="pescasubmit">
-</form>
-
-<form onsubmit="veganfn($('#vegan').val());return false;">
-    <input type="text" name="query" id="vegan">
-    Search for vegan recipes
-    <br>
-    <input type="submit" value='submit' id="vegansubmit">
-</form>
-<br/>
-<br/>
-<form onsubmit="dairyfn($('#dairy').val());return false;">
-    <input type="text" name="query" id="dairy">
-    Search for dairy-free recipes
-    <br>
-    <input type="submit" value='submit' id="dairysubmit">
-</form>
-
-
-<form onsubmit="glutenfn($('#gluten').val());return false;">
-    <input type="text" name="query" id="gluten">
-    Search for gluten-free recipes
-    <br>
-    <input type="submit" value='submit' id="glutensubmit">
-</form>
-
-<form onsubmit="seafoodfn($('#seafood').val());return false;">
-    <input type="text" name="query" id="seafood">
-    Search for seafood-free recipes
-    <br>
-    <input type="submit" value='submit' id="seafoodsubmit">
-</form>
-
-<form onsubmit="treenutfn($('#treenut').val());return false;">
-    <input type="text" name="query" id="treenut">
-    Search for treenut-free recipes
-    <br>
-    <input type="submit" value='submit' id="treenutsubmit">
-</form>
--->
 <div id="results">
 
 </div>

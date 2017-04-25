@@ -1,3 +1,30 @@
+#query {
+    font-family: "MV Boli";
+    font-size: 13px;
+    margin-left: 3.5em;
+    margin-top: 3.5em;
+    border-radius: 4px;
+    border: 2px solid #9eac56;
+    height: 23px;
+}
+#submit {
+    font-family: "MV Boli";
+    color: white;
+    background-color: #a6b45a;
+    border: solid 2px #9eac56;
+    border-radius: 4px;
+    height: 28px;
+}
+#submit:hover {
+    background-color: #cad7b0;
+}
+.searchform ul {
+    font-size: 18px;
+    color: #312f33;
+}
+.textdiv {
+    background-color: #d7e4bd;
+}
 /* the wrapper div for every result */
 .result {
     clear:both;
@@ -18,8 +45,8 @@
 }
 /* the class for the actual image */
 .resultimg {
-    width:100%;
-    max-height:400px;
+    width: auto;
+    max-height:300px;
 }
 
 /* the first div of information with title, categories, and ready in minutes. Every line of info is an unordered list item */

@@ -14,12 +14,14 @@ nav#nav-main {
     background-color: #a6b45a;
     padding: 10px 0;
     z-index: 0;
+    margin-left: -6em;
 }
 nav#nav-main ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center; }
+    text-align: center;
+}
 nav#nav-main li {
     display: inline-block;
     border-right: solid 1px white;
@@ -44,7 +46,7 @@ nav#nav-main a:hover {
     margin-left: auto;
     margin-right: auto;
     margin-top: -50px;
-    z-index: 2;
+    z-index: 1;
     overflow: visible;
     height: 50px;
 }
@@ -53,7 +55,7 @@ nav#nav-main a:hover {
 .textdiv {
     background: #cad7b0;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     display: block;
     height: 10%;
     left: 0;
@@ -110,7 +112,7 @@ p {
 .categories a:visited {
     text-decoration: none;
 }
-.categories a:hover {
+.categories:hover {
     opacity: 1;
 }
 #first {
@@ -162,8 +164,6 @@ p {
     background-image: url("img/banner2.png");
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
 #secondbanner {
     background-image: url("img/afbS.jpg");
@@ -212,4 +212,10 @@ p {
     margin: 0;
     padding: 50px;
     text-align: center;
+}
+.aboutpic {
+    height: 300px;
+}
+.aboutpic img {
+    width: 100%;
 }

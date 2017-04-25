@@ -27,7 +27,7 @@ function searchfn(query){
             for (var i=0; i < results.length; i++){
                 console.log(results[i]);
                 var categories = "categories: ";
-                $('#results').append("<div class='result'><div class='resultimgdiv'><img class='resultimg' src="+results[i].image+"></div><div class='firstinfodiv'><ul><li><a href='"+(results[i].sourceUrl)+"'>"+(results[i].title)+"</a></li><li>Categories: blah</li><li>Ready in: "+(results[i].readyInMinutes)+" minutes</li></ul></div><div class='secondinfodiv'><ul><li>Cuisine: "+(results[i].cuisines)+"</li><li>Dish type: "+(results[i].dishTypes)+"</li><li>Calories: "+(results[i].calories)+"</li></ul></div></div>");
+                $('#results').append("<div class='result'><div class='resultimgdiv'><img class='resultimg' src="+results[i].image+"></div><div class='firstinfodiv'><ul><li><a href='"+(results[i].sourceUrl)+"'>"+(results[i].title)+"</a></li><li>Categories: blah</li><li>Ready in: "+(results[i].readyInMinutes)+" minutes</li><li>Cuisine: "+(results[i].cuisines)+"</li><li>Dish type: "+(results[i].dishTypes)+"</li><li>Calories: "+(results[i].calories)+"</li></ul></div><div class='secondinfodiv'></div></div>");
             }
         },
         error: function(err) { alert(err); },

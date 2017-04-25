@@ -12,11 +12,11 @@
 
 <nav id="nav-main">
     <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Tutorials</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="dietresults.html">Diet Options</a></li>
+        <li><a href="">Allergy Options</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Inspiration</a></li>
+        <li><a href="About.html">About</a></li>
     </ul>
 </nav>
 <div class="textdiv">
@@ -26,8 +26,8 @@
 </div>
 <div class="imgdiv" id="secondbanner">
     <form onsubmit="searchfn($('#query').val());return false;" class="searchform">
-        <input type="text" name="query" id="query">
-        Search for recipes!
+        <input type="text" name="query" id="query" placeholder="Search for recipes!">
+
         <input type="submit" value='submit' id="submit">
         <br>
         <ul><input type="radio" name="diet" id="veg"><label for="veg">vegetarian</label></ul>
@@ -38,7 +38,7 @@
 </div>
 
 <div class="textdiv">
-    <p>Check out these curated results if you're low on inspiration</p>
+    <p>Your Results:</p>
 
 </div>
 <div id="results">
