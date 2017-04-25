@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diet categories</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<nav id="nav-main">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Tutorials</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</nav>
+<div class="textdiv">
+    <img src="logo.png">
+    <p>Choose the diet and food that you want to get recipes for!</p>
+
+</div>
+<div class="imgdiv" id="firstbanner">
+    <form onsubmit="searchfn($('#query').val());return false;" class="searchform">
+        <input type="text" name="query" id="query">
+        Search for recipes!
+        <input type="submit" value='submit' id="submit">
+        <br>
+        <ul><input type="radio" name="diet" id="veg"><label for="veg">vegetarian</label></ul>
+        <ul><input type="radio" name="diet" id="lactoveg"><label for="lactoveg">lacto vegetarian</label></ul>
+        <ul><input type="radio" name="diet" id="pesca"><label for="pesca">pescatarian</label></ul>
+        <ul><input type="radio" name="diet" id="vegan"><label for="vegan">vegan</label></ul>
+    </form>
+</div>
+
+<div class="textdiv">
+    <p>Check out these curated results if you're low on inspiration</p>
+
+</div>
+<div id="results">
+
+</div>
+<div class="footerdiv">
+    <footer>Website made by Jolan Wuyts and Margo Roothoofds using the Spoonacular API.</footer>
+</div>
+</body>
+</html>

@@ -3,7 +3,10 @@ html, body {
     padding: 0;
     width:100%;
 }
-
+@font-face {
+    font-family: "MV Boli";
+    src: url(mvboli.ttf);
+}
 /* nav code from http://callmenick.com/post/simple-responsive-navigation-menu */
 nav {
     margin-bottom: 0;
@@ -11,7 +14,7 @@ nav {
 }
 
 nav#nav-main {
-    background-color: #286385;
+    background-color: #b5c361;
     padding: 10px 0;
     z-index: 4;
 }
@@ -22,74 +25,54 @@ nav#nav-main ul {
     text-align: center; }
 nav#nav-main li {
     display: inline-block;
-    border-right: solid 1px #004191;
-    padding: 0 5px; }
+    border-right: solid 1px white;
+    padding: 0 5px;
+    font-family: "MV Boli";
+    }
 nav#nav-main li:last-child {
     border-right: none; }
 nav#nav-main a {
     display: block;
     color: white;
-    padding: 10px 30px; }
+    padding: 10px 30px;
+    text-decoration: none;}
 nav#nav-main a:hover {
-    background-color: #39709e;
+    background-color: rgba(215, 228, 189, 0.51);
     color: #fff; }
-
 
 /* overhanging logo by Geno Quiroz, https://quiroz.co/the-overlapping-divi-logo/ */
 
-nav img{
+.textdiv img{
     display:block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5px;
-    z-index: 5;
+    margin-top: -40px;
+    z-index: 2;
     overflow: visible;
     height: 50px;
+
 }
 
 /* slanted blocks between banner divs. code for slants here: https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms */
 .textdiv {
-    background: #41ade5;
+    background: #d7e4bd;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     display: block;
     height: 10%;
     left: 0;
     right: 0;
     color: #fff;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "MV Boli", sans-serif;
     margin: 0;
     padding: 30px;
     text-align: center;
 }
 
-.textdiv:after {
-    background: inherit;
-    bottom: 0;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    transform: skewY(3deg);
-    transform-origin: top left;
-    z-index: -1;
+.textdiv p {
+    font-family: "MV Boli";
+    padding-top: 1em;
 }
-.textdiv:before {
-    background: inherit;
-    top: 0;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    transform: skewY(3deg);
-    transform-origin: top right;
-    z-index: -1;
-}
-
 h1 {
     font-size: 32px;
     font-weight: 500;
@@ -104,26 +87,55 @@ p {
 /* slanted image divs with buttons */
 .imgdiv {
     width: 100%;
-    height:500px;
-    z-index: -3;
+    height:400px;
+    z-index: 0;
     position: relative;
+    font-family: "MV Boli";
+    display: inline-block;
 }
+.categories {
+    width: 20%;
+    height: 80px;
+    border: solid 2px #f9cb6f;
+    float: left;
+    background-color: #f9cb6f;
+    opacity: 0.9;
+    margin-top: 180px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+#first {
+}
+.categories a {
+    text-decoration: none;
+    color: white;
+
+}
+.categories a:visited {
+    text-decoration: none;
+}
+
+.buttontext {
+    font-family: "MV Boli";
+}
+
 .imgdiv img{
     max-width:100%;
     display:block;
     vertical-align: bottom;
 }
-#firstbanner {
-    background-image: url("banner1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 
-}
-#secondbanner {
+#firstbanner {
     background-image: url("banner2.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
 
+#secondbanner {
+    background-image: url("afbS.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* buttons and their text. Slanted button trick from http://blog.karenmenezes.com/2014/jun/18/slanted-buttons-3-lines-css/ */
@@ -135,51 +147,36 @@ p {
     padding: 40px;
     width: 25%;
     height: 20%;
-    border: 1px solid #41ade5;
-    background-color: rgba(65, 173, 229, 0.6);
-    transform: skewY(3deg);
-
+    border: 1px solid #f9cb6f;
+    background-color: rgba(249, 203, 114, 0.91);
+    font-family: "MV Boli";
+    font-size: 1em;
 }
 
 .buttontext {
-    transform: skewY(-3deg);
     display: inline-block;
     font-size: 14px;
     font-weight: 300;
     color: #fff;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "MV Boli", sans-serif;
 }
 .imgdiv button *:hover{
     background-color: rgba(65, 173, 229, 1);
     transition:0.3s;
-
 }
 
 /* last banner with footer */
 .footerdiv {
-    background: #41ade5;
+    background: #d7e4bd;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     display: block;
     height: 10%;
     left: 0;
     right: 0;
     color: #fff;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     margin: 0;
     padding: 50px;
     text-align: center;
-}
-.footerdiv:before {
-    background: inherit;
-    top: 0;
-    content: '';
-    display: block;
-    height: 70%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    transform: skewY(3deg);
-    transform-origin: top right;
-    z-index: -1;
 }
