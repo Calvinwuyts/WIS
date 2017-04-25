@@ -1,0 +1,32 @@
+/* the wrapper div for every result */
+.result {
+    clear:both;
+    width: 100%;
+    border: 1px solid red;
+}
+
+/* stuff that applies to all three divs within the result div */
+.resultimgdiv, .firstinfodiv, .secondinfodiv {
+    display:block;
+    width:33%;
+    border: 1px solid green;
+    box-sizing: border-box;
+}
+/* the div where the image on the left comes in */
+.resultimgdiv {
+    float:left;
+}
+/* the class for the actual image */
+.resultimg {
+    width:100%;
+    max-height:400px;
+}
+
+/* the first div of information with title, categories, and ready in minutes. Every line of info is an unordered list item */
+.firstinfodiv {
+    margin:0 auto;
+}
+/* the second div of information with cuisine, dish type, and calories. Every line of info is an unordered list item */
+.secondinfodiv {
+    float: right;
+}
