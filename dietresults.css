@@ -24,6 +24,7 @@
 }
 .textdiv {
     background-color: #d7e4bd;
+    overflow: scroll;
 }
 /* the wrapper div for every result */
 .result {
@@ -42,6 +43,11 @@
 /* the div where the image on the left comes in */
 .resultimgdiv {
     float:left;
+    background-size: cover;
+    height:300px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    overflow:hidden;
 }
 /* the class for the actual image */
 .resultimg {
